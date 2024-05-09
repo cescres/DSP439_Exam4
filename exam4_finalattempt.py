@@ -60,6 +60,16 @@ def kmers_and_subs_manylines(path):
         kmers_and_subskmers(sequence) #returns repeats for some reason
           
 def find_k(path33): #this is how the code for item 3 should theoretically work, but who knows if it actually will
+  """
+  This function will find the smallest value of k such that there is only one unique subsequent kmer for each kmer.
+  This value will print in the terminal.
+  
+  path33 (path): this is the path to the file containing the sequences that will be processed
+  
+  Return:
+    a k-value such that each kmer in the sequence only has one unique subsequent kmer
+  
+  """
   kmers_and_subs_manylines(path33)
   for coconut in range(len(item2_list2)):
     lime = coconut + 1
